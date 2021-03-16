@@ -1,0 +1,49 @@
+<br>
+<br>
+<br>
+<br>
+<footer class="bg-dark text-center text-lg-start text-light clear-top">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-muted">About</h5>
+  
+          <p>
+            <%- conf.strings.footer_aboutText %>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-muted">Links</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <% conf.linkSection1.forEach(x => { %>
+                <li>
+                    <a href="<%= x.href %>" class="text-light"><%= x.name %></a>
+                </li>
+            <% }); %>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-muted">Links</h5>
+  
+          <ul class="list-unstyled">
+            <% conf.linkSection2.forEach(x => { %>
+                <li>
+                    <a href="<%= x.href %>" class="text-light"><%= x.name %></a>
+                </li>
+            <% }); %>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <%- conf.strings.footerCopyright %>
+    </div>
+
+  </footer>
+
+</body>
+</html>

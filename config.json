@@ -1,0 +1,59 @@
+{
+    "isProdMode": false,
+    "port": {
+        "dev": 3000,
+        "production": 25575
+    },
+    "strings": {
+        "linkPageName": "Links",
+        "sitename": "Slimakoi.tk",
+        "icon": "https://avatars.githubusercontent.com/u/24621566?s=460&u=f25bf794956aa3b8a3607ec8127f9ee4053bf457&v=4",
+        "404_messages": [
+            "It seems like you found the wrong page!",
+            "The page you requested could not be found!",
+            "This is not the page you are looking for."
+        ],
+        "footer_aboutText": "Just another developer that creates python scripts with python.",
+        "footerCopyright": "© slimakoi.tk | Powered by: <a href='https://help.seer-software.com' target='_blank'>Seer-Software</a>"
+    },
+    "buttons": [
+        {
+            "name": "Test",
+            "href": "https://help.seer-software.com",
+            "colors": {
+                "bg": "black",
+                "font": "white"
+            },
+            "disabled": false
+        },
+        {
+            "name": "Other button",
+            "href": "https://google.com",
+            "colors": {
+                "bg": "black",
+                "font": "white"
+            },
+            "disabled": true
+        }
+    ],
+    "linkSection1": [
+        {
+            "name": "Test",
+            "href": "https://help.seer-software.com"
+        },
+        {
+            "name": "Other button",
+            "href": "https://google.com"
+        }
+    ],
+    "linkSection2": [
+        {
+            "name": "Test",
+            "href": "https://help.seer-software.com"
+        },
+        {
+            "name": "Other button",
+            "href": "https://google.com"
+        }
+    ]
+}

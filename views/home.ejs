@@ -1,0 +1,25 @@
+<%- include('parts/head.ejs') %>
+
+<div class="page-wrap d-flex flex-row align-items-center text-light mt-5">
+    <div class="container">
+        <div class=" justify-content-center">
+            <div class="col-md-12 text-center mb-4">
+                <span class="display-3 d-block"><%= conf.strings.linkPageName %></span>
+            </div>
+            <% conf.buttons.forEach(x => { 
+                let disabledIcon = ``;
+                if(x.disabled) disabledIcon = '<i title="This link has been temporarily disabled!" class="fas fa-ban" style="color: red;text-shadow: 0px 0px 3px rgba(255, 0, 0, 1);"></i>&nbsp;'
+                let link = x.href;
+                if(x.disabled) link = '#disabled'
+                let targetLink = 'target="_blank"';
+                if(x.disabled) targetLink = '';
+                %>
+                <a href="<%= link %>" <%= targetLink %> class="btn btn-large btn-block" style="background-color: <%= x.colors.bg %>; color: <%= x.colors.font %>;">
+                    <%- disabledIcon %> <%= x.name %>
+                </a> <br>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+<%- include('parts/foot.ejs') %> 
